@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+{% if all_forms %}
+{% for data in all_forms %}
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Form for - {{ data.product_type }}</h4>
+    <p class="card-text">Assigned By - {{ data.assigned_by }}</p>
+    <a href="{% url 'BG-Update' data.id %}" class="card-link">Click here to fill the OPS - BG Form for this property</a>
+  </div>
+</div>
+{% endfor %}
+{% else %}
+    <h2>Hi, You do not have any BG Forms assigned yet.</h2>
+{% endif %}
+{% endblock %}
