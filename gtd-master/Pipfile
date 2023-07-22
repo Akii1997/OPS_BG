@@ -10,7 +10,7 @@ gunicorn = "*"
 factory-boy = "*"
 titlecase = "*"
 bleach = "*"
-django = "==2.1.8"
+django = "==2.2.28"
 django-todo = "==2.4.4"
 
 [dev-packages]
